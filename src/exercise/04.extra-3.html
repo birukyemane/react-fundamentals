@@ -17,13 +17,13 @@
 
     const PropTypes = {
       string(props, propName, componentName) {
-        if (typeof props[propName] !== 'number') {
+        if (typeof props[propName] !== 'string') {
           return new Error('Some usefull error message here')
         }
       },
     }
 
-    Message.PropTypes = {
+    Message.propTypes = {
       greeting: PropTypes.string,
       subject: PropTypes.string,
     }
